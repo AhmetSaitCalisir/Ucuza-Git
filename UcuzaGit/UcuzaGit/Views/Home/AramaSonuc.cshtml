@@ -1,0 +1,161 @@
+﻿@model IEnumerable<UcuzaGit.Entities.Rota>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="~/css/fontawesome.min.css">
+    <link rel="stylesheet" href="~/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/css/main.css">
+
+    <title>Ucuza Git.kon</title>
+    <!--
+    Koyudan Açığa
+    #05386B
+    #379683
+    #5CDB95
+    #8EE4AF
+    #EDF5E1
+    -->
+</head>
+
+<body>
+    <section id="baslik">
+        <nav>
+            <div class="container fixed-top">
+                <div class="row">
+                    <nav class="navbar fixed-top">
+                        <a href="./" class="navbar-brand">Ucuza Git</a>
+                    </nav>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <section id="filtre">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-3" id="sticky-sidebar">
+                    <div class="row sira">
+                        <div class="col" style="margin: 10% 5% 5% 5%">
+                            <label for="Dusuk"> <b class="filtre"> En düşük fiyat </b></label>
+                            <input type="range" class="custom-range" min="0" max="500" step="1" id="Dusuk">
+                        </div>
+                    </div>
+                    <div class="row sira">
+                        <div class="col" style="margin: 5%;">
+                            <label for="Yuksek"> <b class="filtre"> En yüksek fiyat </b></label>
+                            <input type="range" class="custom-range" min="0" max="500" step="1" id="Yuksek">
+                        </div>
+                    </div>
+                    <div class="row sira">
+                        <div class="col" style="margin: 5%;">
+                            <label for="Saat"> <b class="filtre"> Saat </b></label>
+                            <input type="range" class="custom-range" min="0" max="24" step="1" id="Saat">
+                        </div>
+                    </div>
+                    <div class="row sira">
+                        <div class="col" style="margin: 5%;">
+                            <label for="Saat"> <b class="filtre"> En yüksek seyahat süresi </b></label>
+                            <input type="range" class="custom-range" min="0" max="500" step="1" id="Saat">
+                        </div>
+                    </div>
+                    <div class="row sira">
+                        <div class="col" style="margin: 5%;">
+                            <div class="form-check">
+                                <b class="filtre" style="padding-bottom: 5%;">Araçlar</b><br>
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">Uçak</label><br>
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">Otobüs</label><br>
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">Araba</label><br>
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">Tren</label><br>
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">Gemi</label><br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row sira">
+                        <div class="col" style="margin: 5%;">
+                            <div class="form-check">
+                                <b class="filtre" style="padding-bottom: 5%;">Firmalar</b><br>
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">KAMİL KOÇ</label><br>
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">KAMİL KOÇ</label><br>
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">KAMİL KOÇ</label><br>
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">KAMİL KOÇ</label><br>
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">KAMİL KOÇ</label><br>
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">KAMİL KOÇ</label><br>
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">KAMİL KOÇ</label><br>
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">KAMİL KOÇ</label><br>
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label " for="defaultCheck1">KAMİL KOÇ</label><br>
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">KAMİL KOÇ</label><br>
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">KAMİL KOÇ</label><br>
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">KAMİL KOÇ</label><br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" id="main">
+                    <div class="container-fluid">
+                        <div class="row">
+                            @foreach (var item in Model)
+                            {
+                            <div class="col-lg-3 col-data">
+                                <div class="card dat">
+                                    <img src=@Html.DisplayFor(modelItem => item.firma.firma_Logo) class="card-img-top" alt=@Html.DisplayFor(modelItem => item.firma.firma_Adi)>
+                                    <div class="card-body">
+                                        <h5 class="card-title"><b style="color: #333333;">@Html.DisplayFor(modelItem => item.firma.firma_Adi) </b></h5>
+                                        <p class="card-text"> @Html.DisplayFor(modelItem => item.sehir_baslangic.sehir_Adi) -----> @Html.DisplayFor(modelItem => item.sehir_varis.sehir_Adi)</p>
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">@Html.DisplayFor(modelItem => item.tur.tur_Adi)</li>
+                                        <li class="list-group-item">@Html.DisplayFor(modelItem => item.rota_Seyahat)</li>
+                                        <li class="list-group-item">@Html.DisplayFor(modelItem => item.rota_Tarih)</li>
+                                        <li class="list-group-item">@Html.DisplayFor(modelItem => item.rota_Saat)</li>
+                                    </ul>
+                                    <a href="@Html.DisplayFor(modelItem => item.firma.firma_Web)" class="card-link">
+                                        <div class="card-body">
+                                            Bilete Git
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>    
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <script src="~/js/jquery.min.js"></script>
+    <script src="~/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/bootstrap.min.js"></script>
+    <script src="~/js/main.js"></script>
+</body>

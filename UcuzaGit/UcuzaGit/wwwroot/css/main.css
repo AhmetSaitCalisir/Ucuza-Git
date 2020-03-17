@@ -1,0 +1,160 @@
+.fixed-top{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -o-transition: all .8s ease-in-out;
+    -webkit-transition: all .8s ease-in-out;
+    transition: all .8s ease-in-out;
+    background-image: linear-gradient(to right, #25aae1, #5CDB95, #51C284, #61E89E);
+    background-size: 300% 100%;
+}
+.fixed-top:hover{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -o-transition: all .8s ease-in-out;
+    -webkit-transition: all .8s ease-in-out;
+    transition: all .8s ease-in-out;
+    background-image: linear-gradient(to right, #61E89E, #51C284, #5CDB95, #25aae1);
+    background-position: 100% 0;
+}
+.fixed-top:focus{
+    outline: none;
+}
+.navbar-brand{
+    color: #EDF5E1;
+    font-size: 35px;
+    margin-left: 12%;
+    font-family: 'Staatliches', cursive;
+    transition: 800ms;
+}
+.navbar-brand:hover{
+    transform: scale(1.2);
+    color: #05386B;
+}
+#ana{
+    padding-top: 10%;
+    padding-bottom: 5%;
+    background-image: url(../Resim/ana_resim.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+#secim{
+    background-color:#5CDB95;
+    border-radius: 10%;
+    height: 100%;
+    padding: 5%;
+    transition-delay: 500ms;
+    transition: opacity 1s ease-in-out;
+    opacity: 0.8;
+    margin-top: 7%;
+    margin-bottom: 8%;
+}
+#secim:hover{
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+}
+#tarih{
+    border-radius: 5%;
+    border: none;
+    height: 38px;
+}
+#btn_ara{
+    margin-top: 5%;
+    margin-right: 4%;
+}
+#ara{
+    background-color: #379683;
+}
+label{
+    color: #EDF5E1;
+    font-family: 'Staatliches', cursive;
+    font-size: 20px;
+}
+#oneri{
+    background-color: #8EE4AF;
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+.one{
+    border-radius: 10%;
+    margin: 15%;
+    background-color: #379683;
+    color:#EDF5E1 ;
+    height: 600px;
+    transition: 500ms;
+}
+.one:hover{
+    transform: scale(1.3);
+}
+.card-img-top{
+    border-radius: 15%;
+    padding: 5%;
+}
+b{
+    color: #8EE4AF;
+}
+#myTab{
+    background-color: #05386B;
+    color:#EDF5E1;
+}
+.tab-content{
+    background-color: #05386B;
+    color:#EDF5E1;
+    height: 150px;
+}
+a{
+    text-decoration: none;
+}
+#filtre{
+    margin-top: 78px;
+
+}
+.filtre{
+    color: #333333;
+}
+.sira{
+    border-bottom: 0.5px solid;
+    border-color: #25aae1;
+    transition: 500ms;
+    opacity: 0.6;
+}
+.sira:hover{
+    transform: scale(1.1);
+    margin-left: 5%;
+    opacity: 1;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.form-check-label{
+    color: #25aae1;
+    font-size: 18px;
+}
+.form-check-input{
+    margin-top: 5%;
+}
+.form-check-label{
+    margin-top: 2.5%;
+}
+.dat{
+    border-color: #25aae1;
+    border-radius: 0;
+    transition: 500ms;
+}
+.dat:hover{
+    border-color: #61E89E;
+    -webkit-box-shadow: 0px 0px 10px -5px #25aae1;
+    -moz-box-shadow: 0px 0px 10px -5px #25aae1;
+    box-shadow: 0px 0px 10px -5px #25aae1;
+}
+.col-data{
+    margin-top: 2%;
+}
+.list-group-item{
+    transition: 500ms;
+}
+.list-group-item:hover{
+    transform: scale(1.1);
+}

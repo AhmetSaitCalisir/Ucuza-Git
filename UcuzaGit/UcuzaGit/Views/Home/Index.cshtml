@@ -1,0 +1,159 @@
+﻿@model IEnumerable<UcuzaGit.Entities.Sehir>
+
+
+
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="~/css/fontawesome.min.css" type="text/css">
+    <link rel="stylesheet" href="~/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="~/css/main.css" type="text/css">
+
+    <title>Ucuza Git.kon</title>
+    <!--
+    Koyudan Açığa
+    #05386B
+    #379683
+    #5CDB95
+    #8EE4AF
+    #EDF5E1
+    -->
+</head>
+<body>
+    <section id="baslik">
+        <nav>
+            <div class="container fixed-top">
+                <div class="row">
+                    <nav class="navbar fixed-top">
+                        <a href="#" class="navbar-brand">Ucuza Git</a>
+                        <div class="form-inline my-2 my-lg-0" id="btn_kullanici">
+                            <button class="btn btn-outline-success my-2 my-sm-0 btn-secondary"  type="submit">Kullanıcı Girişi</button>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <section id="ana">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-1">
+
+                </div>
+                <div class="col-md" id="secim">
+                    <div class="row">
+                        <div class="col-lg">
+                            <div class="form-group">
+                                <label for="sel1">Nereden</label>
+                                <select class="form-control" id="sel1">
+                                    @foreach (var item in Model)
+                                    {
+                                        <option id="F@Html.DisplayFor(modelItem => item.sehir_ID)"> @Html.DisplayFor(modelItem => item.sehir_Adi) </option>
+                                    }
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg">
+                            <div class="form-group">
+                                <label for="sel2">Nereye</label>
+                                <select class="form-control" id="sel2">
+                                    @foreach (var item in Model)
+                                    {
+                                        <option id="T@Html.DisplayFor(modelItem => item.sehir_ID)"> @Html.DisplayFor(modelItem => item.sehir_Adi) </option>
+                                    }
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg">
+                            <form>
+                                <label for="tarih">Tarih</label><br>
+                                <input type="date" id="tarih" name="bday">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col" id="btn_ara">
+                            
+                            <a href="Home/AramaSonuc"><button type="button" class="btn btn-primary btn-lg btn-block" id="ara">ARA</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="oneri">
+        <div class="container">
+            <div class="row">
+                <div class="col-md">
+                    <div class="card one" style="width: 18rem;">
+                        <img class="card-img-top" src="Resim/side.jpg" alt="Side Antik Kenti">
+                        <div class="card-body">
+                            <p class="h3">Side Antik Kenti <br> <b> Antalya</b></p>
+                            <p class="card-text">Birçok medeniyete ev sahipliği yapan Side Antik Kenti m.ö 7 yy’da inşa edildiği söylenmektedir. Side isminin nar anlamına geldiği şehrin adete denizle iç içe olduğunu görmek ve burada tarihi ve coğrafyası insanı adeta büyülüyor. Burada mermerde yürüyüp ayaklarını aynı zamanda kuma değmesi farklı bir lezzet katmaktadır.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card one" style="width: 18rem;">
+                        <img class="card-img-top" src="Resim/lavanta.jpg" alt="Lavanta Vadisi">
+                        <div class="card-body">
+                            <p class="h3">Lavanta Vadisi <br> <b> Isparta</b></p>
+                            <p class="card-text">Keçiborlu ilçesinde yer almaktadır. Lavanta Vadisi ülkemizin en önemli lavanta üretimi yapılan yerlerdendir. Sessiz, sakin, huzurlu bir ortamda lavantalar güzel kokusunu içiniz çekebilirsiniz. Ayrıca Lavanta Vadisinde güzel fotoğraflar çekebilirsiniz.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card one" style="width: 18rem;">
+                        <img class="card-img-top" src="Resim/efes.jpg" alt="Efes Antik Kenti">
+                        <div class="card-body">
+                            <p class="h3">Efes Antik Kenti <br> <b> İzmir</b></p>
+                            <p class="card-text">İzmir gezilecek yerler listesi içindeki en değerli yerlerden Efes Antik Kentine iki kapıdan giriş yapılıyor. Efes üst kapında giriş yapın, antik şehrin görkemli mirasını keşfetmeye başlayın. Celsus Kütüphanesi, Büyük Tiyatro, Teras Evler görülmesi gereken değerli yerler. Şehri gezmek için en az 3 saatinizi ayırmanız gerekiyor.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="alt">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true" style="color:#5CDB95 ;">GİRİŞ</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false" style="color:#5CDB95 ;">GELİŞME</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false" style="color:#5CDB95 ;">SONUÇ</a>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                MERABALAR
+            </div>
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                MERABALAR
+            </div>
+            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                MERABALAR
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="~/js/jquery.min.js"></script>
+    <script src="~/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/bootstrap.min.js"></script>
+    <script src="~/js/main.js"></script>
+</body>
